@@ -215,9 +215,13 @@ exports = module.exports = svgcode = function(svgPath) {
         let cmds = pathsToCmds(dPaths);
         let gcode = cmdsToGcode(cmds);
         // custom commands for application - not valid generally
-        gcode.unshift(`G92 X${viewbox[0]} Y${viewbox[1]}`, `G92.2 X${viewbox[2]} Y${viewbox[3]}`, 'G90');
-        gcodeString = gcode.join("\n");
-        resolve(gcodeString);
+        if(parseInt(viewbox[0]) === 0 && parseInt(viewbox[1]) === 0 && parseInt(viewbox[2]) > 0 && parseInt(viewbox[3]) > 0) {
+          gcode.unshift(`G92 X${viewbox[2]} Y${viewbox[3]}`, 'G90');
+          gcodeString = gcode.join("\n");
+          resolve(gcodeString);
+        } else {
+          reject(new Error('Something seems wrong with the SVG - check the viewbox. Should be {0 0 width height}'))
+        }
       })
       .catch((err) => {
         reject(err);
