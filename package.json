@@ -1,0 +1,14 @@
+{
+  "name": "svgcode",
+  "version": "1.0.0",
+  "description": "convert svgs to gcode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildParser": "pegjs -o parser.js grammar.peg"
+  },
+  "dependencies": {
+    "svgo": "^1.0.5",
+    "xml2js": "^0.4.19"
+  }
+}
