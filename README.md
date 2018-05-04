@@ -25,8 +25,8 @@ svgcode(pathToSVG)
 ```
 
 ## TODO
-add Zs instead of using G0 as non drawing moves
-currently not parsing:
-  smooth curveto
-  smooth quadratic curveto
-  elliptical arc
+* add Zs instead of using G0 as non drawing moves
+* currently not parsing:
+  * smooth curveto
+  * smooth quadratic curveto
+  * elliptical arc
