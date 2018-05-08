@@ -135,6 +135,7 @@ Approximate Cost: $247.16
     <td>$12.56</td>
   </tr>
 </table>
+
 ## **Assembly Instructions**
 **Gather your materials**
     3d print the assets in this directory.
