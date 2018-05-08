@@ -137,40 +137,40 @@ Approximate Cost: $247.16
 </table>
 
 ## **Assembly Instructions**
-**Gather your materials**
+  **Gather your materials**
     3d print the assets in this directory.
     Laser cut this file out of .125 inch thick acrylic.
     Laser cut this file out of .25 inch thick acrylic.
-Order the hardware and electrical components listed in the bill of materials.  
-**Assemble Electronics**
+    Order the hardware and electrical components listed in the bill of materials.  
+  **Assemble Electronics**
 [photo15]
-First, prepare the acrylic mounting plate for all of the electronics. Use a variety of standoffs to mount the electronics. The Keyestudio CNC board requires M3 screws while the raspberry pi requires M2.5 screws. Mount the dual output power supply flush to the plate with two M3 screws. Once everything is in place, the electronics can be wired. Wire the power input for the CNC GRBL board to 12 volts at output number 2. Wire the power input for the raspberry pi to 5 volts at output number 1.  
+    First, prepare the acrylic mounting plate for all of the electronics. Use a variety of standoffs to mount the electronics. The Keyestudio CNC board requires M3 screws while the raspberry pi requires M2.5 screws. Mount the dual output power supply flush to the plate with two M3 screws. Once everything is in place, the electronics can be wired. Wire the power input for the CNC GRBL board to 12 volts at output number 2. Wire the power input for the raspberry pi to 5 volts at output number 1.  
 [photo16]
-Next, wire the board for power and connect the Raspberry Pi to the CNC board via USB. After joining the Raspberry Pi to the CNC board, begin to populate the motor driver sockets. There is three drivers total. One driver for the x-direction, one for the y-direction, and one for the z-direction, which actuates the marker color.  
+    Next, wire the board for power and connect the Raspberry Pi to the CNC board via USB. After joining the Raspberry Pi to the CNC board, begin to populate the motor driver sockets. There is three drivers total. One driver for the x-direction, one for the y-direction, and one for the z-direction, which actuates the marker color.  
 **Assemble the Pen Turret**
-The pen turret allows the machine to hold 5 markers at once, so posters can feature multiple colors. The turret assembly is mostly 3d printed but contains a few pieces of hardware. 
-Before assembling the two major printed components, load each cylinder of the changer with linear bearings. Attach the pen guides with the actuating tabs matching each of the 5 slots.  
-[photo12]
-Join the lower and upper assemblies with a .25" metal shaft, which runs through the two flanged bearings contained in the upper assembly. Then, place a GT2 pulley on top to provide power from the Z-axis motor. 
+    The pen turret allows the machine to hold 5 markers at once, so posters can feature multiple colors. The turret assembly is mostly 3d printed but contains a few pieces of hardware. 
+    Before assembling the two major printed components, load each cylinder of the changer with linear bearings. Attach the pen guides with the actuating tabs matching each of the 5 slots.  
+    [photo12]
+    Join the lower and upper assemblies with a .25" metal shaft, which runs through the two flanged bearings contained in the upper assembly. Then, place a GT2 pulley on top to provide power from the Z-axis motor. 
         
 **Assemble Core XY Machine**
-Cut Rail to length
-The gantry movement depends on the two lengths of MakerSlide, one for the x-dimension and one for the y-dimension. For the x-dimension, cut one length of MakerSlide that is 16" long. For the y- dimension, cut another piece of MakerSlide that is 22" long. The ends of each piece have two holes in the center of the rails. Tap the holes on each of these ends with an M5 tap to be able to attach the motors and pen turret.
-Assemble the center bearing hub.
+    Cut Rail to length
+    The gantry movement depends on the two lengths of MakerSlide, one for the x-dimension and one for the y-dimension. For the x-dimension, cut one length of MakerSlide that is 16" long. For the y- dimension, cut another piece of MakerSlide that is 22" long. The ends of each piece have two holes in the center of the rails. Tap the holes on each of these ends with an M5 tap to be able to attach the motors and pen turret.
+    Assemble the center bearing hub.
     [photo4]
-The center bearing hub will move along the x-rail and hold the y-rail.  
-To assemble the bearing hub, install four smooth idler pulleys on the top side of the lower plate. Next, install four V-wheels on the underside of the bottom plate so it can travel along the x-rail. Place eccentric spacers in the larger holes on the bottom plate and attach the wheels with M5 screws through the eccentric spacers. Simply insert screws into the slightly smaller holes to attach the other two wheels. Install 4 V-wheels on the top side of the upper plate for the y-rail to travel through, again using eccentric spacers for two of the wheels. Using M3 screws and 20mm M3 standoffs, connect the top and bottom plates together to complete the center bearing hub. Slide the center bearing hub onto a length of the MakerSlide to verify the preload and make adjustments by rotating the eccentric spacers.       
-Prep Rail Sub- Assemblies
+    The center bearing hub will move along the x-rail and hold the y-rail.  
+    To assemble the bearing hub, install four smooth idler pulleys on the top side of the lower plate. Next, install four V-wheels on the underside of the bottom plate so it can travel along the x-rail. Place eccentric spacers in the larger holes on the bottom plate and attach the wheels with M5 screws through the eccentric spacers. Simply insert screws into the slightly smaller holes to attach the other two wheels. Install 4 V-wheels on the top side of the upper plate for the y-rail to travel through, again using eccentric spacers for two of the wheels. Using M3 screws and 20mm M3 standoffs, connect the top and bottom plates together to complete the center bearing hub. Slide the center bearing hub onto a length of the MakerSlide to verify the preload and make adjustments by rotating the eccentric spacers.       
+    Prep Rail Sub- Assemblies
     [photo6]
-Tap the four small holes, which surround the large hole in the top of each motor bracket using an M5 tap. Attach a motor bracket to one side of the 16" length of MakerSlide, then slide it through the wheels on the bottom of the center bearing hub, and fasten another motor bracket to the other side.  Slip the pen turret assembly onto either end of the 22" length of MakerSlide and mark the locations for two M3 retention screws in the slots on each side. Drill a hole in each location and bore it with an M3 tap.  
-Install Motors and Belt System  
+    Tap the four small holes, which surround the large hole in the top of each motor bracket using an M5 tap. Attach a motor bracket to one side of the 16" length of MakerSlide, then slide it through the wheels on the bottom of the center bearing hub, and fasten another motor bracket to the other side.  Slip the pen turret assembly onto either end of the 22" length of MakerSlide and mark the locations for two M3 retention screws in the slots on each side. Drill a hole in each location and bore it with an M3 tap.  
+    Install Motors and Belt System  
 [photo9]
-Tap the belt clamp (m5 tap) and attach the clamp to the belt retaining plate with an m5 screw.  both the belt retaining plate and the 3rd motor bracket to the back of the 22" length of MakerSlide. Attach the x- and y-motors to their respective sides of the 16" length of MakerSlide. Route and tension the belt, referring to the core xy configuration if necessary. Tension the belt, tighten the belt clamp, and trim any excess belt. Attach the color selection motor to the 3rd motor bracket on the back of the 22" length of MakerSlide. Loosen the screws that hold the pen turret on the front of the 22" length of MakerSlide and install the closed loop belt between the pulleys on the color select motor and the pen turret. Pull the pen turret away from the color select motor to tension the belt then tighten the screws to secure the turret and belt tension.
-**Build a Base**
+    Tap the belt clamp (m5 tap) and attach the clamp to the belt retaining plate with an m5 screw.  both the belt retaining plate and the 3rd motor bracket to the back of the 22" length of MakerSlide. Attach the x- and y-motors to their respective sides of the 16" length of MakerSlide. Route and tension the belt, referring to the core xy configuration if necessary. Tension the belt, tighten the belt clamp, and trim any excess belt. Attach the color selection motor to the 3rd motor bracket on the back of the 22" length of MakerSlide. Loosen the screws that hold the pen turret on the front of the 22" length of MakerSlide and install the closed loop belt between the pulleys on the color select motor and the pen turret. Pull the pen turret away from the color select motor to tension the belt then tighten the screws to secure the turret and belt tension.
+    **Build a Base**
 [photo21]** **
-Refer to this .dxf of the base gantry and motor pattern.
-Use the pattern to create a unique base for your machine. 
-Ensure that your drawing surface 1.75 inches from the bottom of the 16" inch rail. 
+        Refer to this .dxf of the base gantry and motor pattern.
+        Use the pattern to create a unique base for your machine. 
+        Ensure that your drawing surface 1.75 inches from the bottom of the 16" inch rail. 
 ## **Firmware**
 Download the latest Arduino ide.
 Download the correct ch341 driver for your operating system.
